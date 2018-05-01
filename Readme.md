@@ -1,9 +1,10 @@
+
 # Arch Linux Legacy Install
 
 ## Mirror list
 
 ~~~
-// Check if you are connected to the internet
+// Check if you are connected to the interne
 $ ping archlinux.org
 
 // Update
@@ -68,9 +69,11 @@ $ nano /etc/locale.gen
 
 //uncomment local you would like to use
 
-$ locale-gen // set local
+// set local
+$ locale-gen 
 
-$ ln -sf /usr/share/zoneinfo/[region]/[city] /etc/localtime  // set clock of the system
+// set clock of the system
+$ ln -sf /usr/share/zoneinfo/[region]/[city] /etc/localtime  
 
 $ hwclock --systohc --utc
 
@@ -80,7 +83,8 @@ clear
 ## Sys Details
 
 ~~~
-$ echo [pcName] > /etc/hostname // Create hostname for computer
+// Create hostname for computer
+$ echo [pcName] > /etc/hostname 
 
 $ nano /etc/hosts > add these lines
 ~~~
@@ -89,7 +93,8 @@ $ nano /etc/hosts > add these lines
 Save file
 
 ~~~
-$systemctl enable dhcpcd // setsup new password to arch
+// setsup new password to arch
+$systemctl enable dhcpcd 
 
 $passwd
 
@@ -99,11 +104,13 @@ $clear
 ## BootLoader
 
 ~~~
-$ pacman -S grub // Setup GRUB bootloader
+// Setup GRUB bootloader
+$ pacman -S grub 
 
 $ grub-install /dev/sda
 
-$ grub-mkconfig -o /boot/grub/grub.cfg // configures grub loader
+// configures grub loader
+$ grub-mkconfig -o /boot/grub/grub.cfg 
 
 $ exit
 
@@ -117,11 +124,14 @@ $ reboot
 Login to arch
 
 ~~~
-$ useradd -m -g users -G wheel -s /bin/bash [userName] // adds new arch user
+// adds new arch user
+$ useradd -m -g users -G wheel -s /bin/bash [userName] 
 
-$ passwd [userName] // addes password
+// adds password
+$ passwd [userName] 
 
-$ EDITOR=nano visudo // goes into sudoers file
+// goes into sudoers file
+$ EDITOR=nano visudo 
 
 Find zwheel ALL=(ALL) ALL > uncomment
 
@@ -133,26 +143,34 @@ $ exit
 login as new user
 
 ~~~
-$ sudo pacman -S pulseaudio pulseaudio-alsa // install audio
+// install audio
+$ sudo pacman -S pulseaudio pulseaudio-alsa 
 
-$ sudo pacman -S xorg xorg-xinit // install graphics > select option (1) intergrated
+// install graphics > select option (1) intergrated
+$ sudo pacman -S xorg xorg-xinit 
 
 $ clear
 
-$ echo "exec gnome-session" > ~/.xinitrc // create a file of init for guid
-$ sudo pacman -S gnome // install gnome desktop
+// create a file of init for guid
+$ echo "exec gnome-session" > ~/.xinitrc 
+
+// install gnome desktop
+$ sudo pacman -S gnome 
 
 // install random needed programs
 
-$ startx // starts GUI
+// starts GUI
+$ startx 
 ~~~
 
 ## Login manager
 
 ~~~
-$ sudo pacman -S sddm // install login manager
+// install login manager
+$ sudo pacman -S sddm 
 
-$ sudo systemctl enable sddm.service // run login manager service
+// run login manager service
+$ sudo systemctl enable sddm.service 
 
 $ reboot
 ~~~
