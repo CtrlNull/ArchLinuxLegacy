@@ -1,5 +1,5 @@
 
-# Arch Linux Legacy Install
+# Arch Linux :penguin: Legacy Install
 
 ## Mirror list
 
