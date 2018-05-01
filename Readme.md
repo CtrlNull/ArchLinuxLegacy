@@ -1,6 +1,6 @@
 
 # Arch Linux :penguin: Legacy Install
-![alt text]( "arch.png Logo Title Text 1")
+![alt text]( "index.png Logo Title Text 1")
 ---
 Note** this is for non-dual boot, GNOME Setup
 
