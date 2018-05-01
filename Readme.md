@@ -1,7 +1,7 @@
 
 # Arch Linux :penguin: Legacy Install
-![alt text]( index.png){:height="25%" width="25%"}
----
+ <img src="https://news-cdn.softpedia.com/images/news2/How-to-Install-Third-Party-Apps-in-Arch-Linux-2.png" width="125" height="100">
+ ---
 Note** this is for non-dual boot, GNOME Setup
 
 ## Mirror list
