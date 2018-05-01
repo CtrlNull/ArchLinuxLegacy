@@ -1,5 +1,6 @@
 
 # Arch Linux :penguin: Legacy Install
+Note** this is for non-dual boot, GNOME Setup
 
 ## Mirror list
 
@@ -26,11 +27,13 @@ $ fdisk -l
 
 // Partition menu (like diskpart in windows)
 $ cfdisk /dev/sda 
+~~~
 
 // Selection Menu
-Select > dos
-create select > primary > bootable > Write > yes > quit
+> Select > dos
+> create select > primary > bootable > Write > yes > quit
 
+~~~
 // Formats partition
 $ mkfs.ext4 dev/sda1 
 
@@ -89,7 +92,8 @@ $ echo [pcName] > /etc/hostname
 $ nano /etc/hosts > add these lines
 ~~~
 
-127.0.1.1    localhost.localdomain pcName
+>127.0.1.1    localhost.localdomain pcName
+
 Save file
 
 ~~~
