@@ -1,6 +1,6 @@
 
 # Arch Linux :penguin: Legacy Install
-![alt text]( index.png =250x250)
+![alt text]( index.png){:height="25%" width="25%"}
 ---
 Note** this is for non-dual boot, GNOME Setup
 
