@@ -1,5 +1,7 @@
 
 # Arch Linux :penguin: Legacy Install
+![alt text]( "Logo Title Text 1")
+---
 Note** this is for non-dual boot, GNOME Setup
 
 ## Mirror list
@@ -71,11 +73,15 @@ $ arch-chroot /mnt /bin/bash
 $ nano /etc/locale.gen  
 
 //uncomment local you would like to use
+or 
+$ LANG=C perl -i -pe 's/#(en_US.UTF)/$1/' /etc/locale.gen
 
 // set local
 $ locale-gen 
 
 // set clock of the system
+$ localectl set-locale LANG="en_US.UTF-8"
+ or
 $ ln -sf /usr/share/zoneinfo/[region]/[city] /etc/localtime  
 
 $ hwclock --systohc --utc
